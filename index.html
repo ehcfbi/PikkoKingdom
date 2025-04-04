@@ -1,25 +1,10 @@
-<html> <head> <style> h1 { font-size: 24px; color: blue; }
-
-h2 {
-  font-size: 18px;
-  color: red;
-}
-
-input[type=password] {
-  width: 200px;
-  height: 30px;
-  border: 1px solid black;
-}
-
-button {
-  width: 100px;
-  height: 40px;
-  background-color: green;
-  color: white;
-}
-
-p {
-  color: red;
-}
-
-</style> <script> function checkPassword() { // パスワード入力欄の要素を取得 var passwordInput = document.querySelector(“input[type=password]”); // 入力されたパスワードを取得 var password = passwordInput.value; // 正しいパスワードを定義 var correctPassword = “awhsccvvplkoif”; // フォームの要素を取得 var form = document.querySelector(“form”); // エラーメッセージの要素を取得 var errorMessage = document.querySelector(“#error-message”); // 入力されたパスワードと正しいパスワードを比較 if (password == correctPassword) { // 一致していればフォームのデータを送信 form.submit(); } else { // 一致していなければエラーメッセージを表示 errorMessage.textContent = “パスワードが間違っています。”; } } </script> </head> <body> <h1>secret</h1> <h2>Please enter your password.</h2> <form action=“https://google.com” method=“post” onsubmit=“checkPassword(); return false;”> <input type=“password” name=“password” placeholder=“パスワードを入力” required> <button type=“button” onclick=“checkPassword();”>送信</button> </form> <p id=“error-message”></p> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <h1>Welcome to PikkoKingdom!</h1>
+  </body>
+</html>
